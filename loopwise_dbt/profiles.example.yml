@@ -1,0 +1,14 @@
+# Copy this file to profiles.yml (same folder) and set region_name to your bucket's region.
+# profiles.yml is gitignored. No keys go here: dbt uses the credentials from `aws configure`.
+loopwise:
+  target: dev
+  outputs:
+    dev:
+      type: athena
+      database: awsdatacatalog
+      schema: loopwise
+      region_name: us-west-2
+      s3_staging_dir: s3://loopwise-customer360-julianne/athena-results/
+      s3_data_dir: s3://loopwise-customer360-julianne/dbt/
+      work_group: primary
+      threads: 4

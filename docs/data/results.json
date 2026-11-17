@@ -1,0 +1,325 @@
+{
+  "generated_at": "2026-11-16 21:46 UTC",
+  "model_id": "us.anthropic.claude-sonnet-4-6",
+  "results": [
+    {
+      "question": "What is our total current MRR, and how is it split by customer segment?",
+      "sql": "SELECT\n  segment,\n  COUNT(DISTINCT account_id)          AS customer_count,\n  ROUND(SUM(mrr_usd), 2)              AS total_mrr_usd,\n  ROUND(\n    100.0 * SUM(mrr_usd) / NULLIF(SUM(SUM(mrr_usd)) OVER (), 0),\n    1\n  )                                   AS pct_of_total_mrr\nFROM loopwise_marts.mart_account_health\nWHERE has_active_subscription = TRUE\nGROUP BY segment\nORDER BY total_mrr_usd DESC",
+      "approach": "Filters to accounts with an active subscription (ensuring only current MRR is counted), then groups by segment to show each segment's customer count, total MRR, and its share of overall MRR.",
+      "chart": {
+        "type": "bar",
+        "x": "segment",
+        "y": "total_mrr_usd"
+      },
+      "columns": [
+        "segment",
+        "customer_count",
+        "total_mrr_usd",
+        "pct_of_total_mrr"
+      ],
+      "rows": [
+        [
+          "Enterprise",
+          "8",
+          "119761.08",
+          "84.7"
+        ],
+        [
+          "Mid-Market",
+          "10",
+          "17829.25",
+          "12.6"
+        ],
+        [
+          "SMB",
+          "22",
+          "3871.62",
+          "2.7"
+        ]
+      ],
+      "attempts": 1,
+      "status": "ok",
+      "answer": "Our total current MRR is **$141,461.95**, split across three segments: Enterprise (8 customers) dominates at **$119,761.08 (84.7%)**, followed by Mid-Market (10 customers) at **$17,829.25 (12.6%)**, and SMB (22 customers) contributing **$3,871.62 (2.7%)**."
+    },
+    {
+      "question": "What is current MRR by region?",
+      "sql": "SELECT\n  a.region,\n  ROUND(SUM(s.mrr_usd), 2) AS total_mrr_usd\nFROM loopwise_marts.fct_subscriptions s\nJOIN loopwise_marts.dim_account a\n  ON s.account_id = a.account_id\nWHERE s.is_active = TRUE\nGROUP BY a.region\nORDER BY total_mrr_usd DESC",
+      "approach": "Sums MRR from active subscriptions only, joined to dim_account for region, then groups by region to show current MRR per sales region.",
+      "chart": {
+        "type": "bar",
+        "x": "region",
+        "y": "total_mrr_usd"
+      },
+      "columns": [
+        "region",
+        "total_mrr_usd"
+      ],
+      "rows": [
+        [
+          "NA",
+          "79722.00"
+        ],
+        [
+          "EMEA",
+          "42012.62"
+        ],
+        [
+          "APAC",
+          "19727.33"
+        ]
+      ],
+      "attempts": 1,
+      "status": "ok",
+      "answer": "Current MRR is highest in North America at $79,722, followed by EMEA at $42,013, and APAC at $19,727, bringing the total across all regions to approximately $141,462."
+    },
+    {
+      "question": "Which 10 customers have the most unused paid seats?",
+      "sql": "SELECT\n  account_id,\n  account_name,\n  segment,\n  region,\n  seats_paid,\n  active_users_latest,\n  seats_paid - active_users_latest AS unused_seats,\n  ROUND(seat_utilization * 100, 2) AS seat_utilization_pct\nFROM loopwise_marts.mart_account_health\nWHERE has_active_subscription = TRUE\n  AND seats_paid > 0\nORDER BY unused_seats DESC\nLIMIT 10",
+      "approach": "Filter to active subscribers, compute unused seats as seats_paid minus active_users_latest, and return the top 10 accounts with the highest unused seat count.",
+      "chart": {
+        "type": "bar",
+        "x": "account_name",
+        "y": "unused_seats"
+      },
+      "columns": [
+        "account_id",
+        "account_name",
+        "segment",
+        "region",
+        "seats_paid",
+        "active_users_latest",
+        "unused_seats",
+        "seat_utilization_pct"
+      ],
+      "rows": [
+        [
+          "001Hs00008JkqH3",
+          "Pinecrest Logistics",
+          "Enterprise",
+          "NA",
+          "702",
+          "175",
+          "527",
+          "25.0"
+        ],
+        [
+          "001Hs0000kplJek",
+          "Xenon Logistics",
+          "Enterprise",
+          "NA",
+          "611",
+          "122",
+          "489",
+          "20.0"
+        ],
+        [
+          "001Hs0000nIiU74",
+          "Copper Labs",
+          "Enterprise",
+          "NA",
+          "634",
+          "174",
+          "460",
+          "27.0"
+        ],
+        [
+          "001Hs0000EEpDJj",
+          "Ember Financial",
+          "Enterprise",
+          "APAC",
+          "763",
+          "536",
+          "227",
+          "70.0"
+        ],
+        [
+          "001Hs0000yq7YYD",
+          "Pinecrest Studios",
+          "Enterprise",
+          "EMEA",
+          "719",
+          "514",
+          "205",
+          "71.0"
+        ],
+        [
+          "001Hs0000Y3oobQ",
+          "Beacon Labs",
+          "Enterprise",
+          "NA",
+          "486",
+          "354",
+          "132",
+          "73.0"
+        ],
+        [
+          "001Hs0000JAfo16",
+          "Umbra Energy",
+          "Mid-Market",
+          "EMEA",
+          "146",
+          "33",
+          "113",
+          "23.0"
+        ],
+        [
+          "001Hs0000x41Ztp",
+          "Redwood Media",
+          "Enterprise",
+          "NA",
+          "730",
+          "619",
+          "111",
+          "85.0"
+        ],
+        [
+          "001Hs0000sGQONv",
+          "Quill Financial",
+          "Mid-Market",
+          "EMEA",
+          "111",
+          "13",
+          "98",
+          "12.0"
+        ],
+        [
+          "001Hs00000K6sCh",
+          "Delta Analytics",
+          "Mid-Market",
+          "NA",
+          "114",
+          "27",
+          "87",
+          "24.0"
+        ]
+      ],
+      "attempts": 1,
+      "status": "ok",
+      "answer": "The 10 customers with the most unused paid seats are led by Pinecrest Logistics (527 unused seats), followed by Xenon Logistics (489), Copper Labs (460), Ember Financial (227), and Pinecrest Studios (205), with the remaining five \u2014 Beacon Labs (132), Umbra Energy (113), Redwood Media (111), Quill Financial (98), and Delta Analytics (87) \u2014 rounding out the list. Notably, the top three are all Enterprise accounts in the NA region with seat utilization rates of just 20\u201327%, suggesting significant underadoption."
+    },
+    {
+      "question": "How many customers are at each churn risk level, and how much current MRR does each level represent?",
+      "sql": "SELECT churn_risk, COUNT(*) AS customer_count, ROUND(SUM(mrr_usd), 2) AS total_mrr_usd FROM loopwise_marts.mart_account_health WHERE is_customer = TRUE AND has_active_subscription = TRUE GROUP BY churn_risk ORDER BY CASE churn_risk WHEN 'High' THEN 1 WHEN 'Medium' THEN 2 WHEN 'Low' THEN 3 ELSE 4 END",
+      "approach": "Filters to active customers only, then groups by churn_risk to count accounts and sum current MRR for each risk level.",
+      "chart": {
+        "type": "bar",
+        "x": "churn_risk",
+        "y": "total_mrr_usd"
+      },
+      "columns": [
+        "churn_risk",
+        "customer_count",
+        "total_mrr_usd"
+      ],
+      "rows": [
+        [
+          "High",
+          "17",
+          "57425.37"
+        ],
+        [
+          "Low",
+          "23",
+          "84036.58"
+        ]
+      ],
+      "attempts": 1,
+      "status": "ok",
+      "answer": "There are 17 customers at high churn risk, representing $57,425.37 in current MRR, while 23 customers are at low churn risk, accounting for $84,036.58 in MRR."
+    },
+    {
+      "question": "How much MRR did we lose to cancellations in 2026, by month of cancellation?",
+      "sql": "WITH cancelled_subs AS (\n    SELECT\n        DATE_TRUNC('month', canceled_at) AS cancellation_month,\n        SUM(mrr_usd) AS mrr_lost_usd\n    FROM loopwise_marts.fct_subscriptions\n    WHERE subscription_status = 'canceled'\n      AND canceled_at >= DATE '2026-01-01'\n      AND canceled_at < DATE '2027-01-01'\n    GROUP BY DATE_TRUNC('month', canceled_at)\n)\nSELECT\n    cancellation_month,\n    ROUND(mrr_lost_usd, 2) AS mrr_lost_usd\nFROM cancelled_subs\nORDER BY cancellation_month",
+      "approach": "Sums MRR from canceled subscriptions in fct_subscriptions, grouped by the month of cancellation, to show how much recurring revenue was lost each month in 2026.",
+      "chart": {
+        "type": "bar",
+        "x": "cancellation_month",
+        "y": "mrr_lost_usd"
+      },
+      "columns": [
+        "cancellation_month",
+        "mrr_lost_usd"
+      ],
+      "rows": [
+        [
+          "2026-06-01",
+          "17670.83"
+        ],
+        [
+          "2026-07-01",
+          "487.80"
+        ],
+        [
+          "2026-08-01",
+          "14213.33"
+        ],
+        [
+          "2026-09-01",
+          "21999.33"
+        ]
+      ],
+      "attempts": 1,
+      "status": "ok",
+      "answer": "In 2026, MRR lost to cancellations totaled **$17,670.83** in June, **$487.80** in July, **$14,213.33** in August, and **$21,999.33** in September. September saw the highest churn, while July had by far the lowest MRR loss from cancellations."
+    },
+    {
+      "question": "How have total monthly active users trended across 2026?",
+      "sql": "SELECT DATE_FORMAT(usage_month, '%Y-%m') AS month, SUM(active_users) AS total_active_users FROM loopwise_marts.fct_usage_monthly GROUP BY DATE_FORMAT(usage_month, '%Y-%m') ORDER BY month",
+      "approach": "Aggregate active users across all accounts for each month in 2026 to show the overall trend over time.",
+      "chart": {
+        "type": "line",
+        "x": "month",
+        "y": "total_active_users"
+      },
+      "columns": [
+        "month",
+        "total_active_users"
+      ],
+      "rows": [
+        [
+          "2026-01",
+          "4784"
+        ],
+        [
+          "2026-02",
+          "4407"
+        ],
+        [
+          "2026-03",
+          "4226"
+        ],
+        [
+          "2026-04",
+          "4151"
+        ],
+        [
+          "2026-05",
+          "3765"
+        ],
+        [
+          "2026-06",
+          "3403"
+        ],
+        [
+          "2026-07",
+          "3350"
+        ],
+        [
+          "2026-08",
+          "3294"
+        ],
+        [
+          "2026-09",
+          "3208"
+        ],
+        [
+          "2026-10",
+          "3276"
+        ]
+      ],
+      "attempts": 1,
+      "status": "ok",
+      "answer": "Total monthly active users have declined consistently throughout 2026, dropping from a high of 4,784 in January to 3,276 in October \u2014 a decrease of roughly 1,500 users (about 31%) over the period. The sharpest drops occurred in the first half of the year, with the decline leveling off somewhat between July and October."
+    }
+  ]
+}

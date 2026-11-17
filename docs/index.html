@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loopwise Customer 360 · AI analyst demo</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --ink: #1d2433; --muted: #5b6475; --line: #e3e6ec; --bg: #f7f8fa;
+    --card: #ffffff; --accent: #2f6fde; --accent-soft: #e8f0fd; --warn: #b4531a;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         color: var(--ink); background: var(--bg); }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 48px 20px 80px; }
+  header h1 { font-size: 30px; line-height: 1.2; margin: 0 0 10px; }
+  header p { color: var(--muted); margin: 0 0 8px; max-width: 70ch; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 8px; }
+  .links a { text-decoration: none; color: var(--accent); background: var(--accent-soft);
+             padding: 6px 12px; border-radius: 999px; font-size: 14px; font-weight: 600; }
+  .flow { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin: 28px 0 8px; }
+  .flow div { background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+              padding: 10px; font-size: 13px; text-align: center; }
+  .flow b { display: block; font-size: 14px; }
+  .meta { color: var(--muted); font-size: 13px; margin: 6px 0 28px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+          padding: 22px 24px; margin: 0 0 20px; }
+  .card h2 { font-size: 18px; margin: 0 0 8px; }
+  .answer { margin: 0 0 16px; }
+  .chart-box { position: relative; height: 280px; margin: 8px 0 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 8px 0 12px; }
+  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; }
+  details { margin-top: 6px; }
+  summary { cursor: pointer; color: var(--accent); font-size: 14px; font-weight: 600; }
+  pre { background: #10151f; color: #e6e9ef; padding: 14px; border-radius: 10px;
+        overflow-x: auto; font-size: 13px; }
+  .approach { color: var(--muted); font-size: 14px; }
+  .error { color: var(--warn); }
+  .video { width: 100%; border-radius: 14px; border: 1px solid var(--line); background: #000; margin: 4px 0 8px; }
+  h2.section { font-size: 18px; margin: 32px 0 10px; }
+  @media (max-width: 640px) { .flow { grid-template-columns: 1fr 1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Loopwise Customer 360: an AI analyst on clean, modeled data</h1>
+    <p>Loopwise is a fictional B2B SaaS company whose customer data was split across a CRM, a billing tool and product-usage exports. I ingested all three into AWS, cleaned and matched them with dbt, and documented every column, so an AI model can answer business questions accurately.</p>
+    <p>Below, Claude on Amazon Bedrock reads the dbt data dictionary, writes the SQL for each question, and explains the result. Every query is checked to be read-only before it runs on Athena.</p>
+    <div class="links">
+      <a href="https://github.com/julianneitliong/customer-360">GitHub repo</a>
+      <a href="#walkthrough">Watch the 4-minute walkthrough</a>
+      <a href="dbt/index.html">Data dictionary and lineage (dbt docs)</a>
+    </div>
+  </header>
+
+  <div class="flow">
+    <div><b>Sources</b>CRM, billing API, usage files</div>
+    <div><b>S3 + Glue</b>Raw landing zone and catalog</div>
+    <div><b>dbt on Athena</b>Staging, matching, marts, 27 tests</div>
+    <div><b>Data dictionary</b>Every column described</div>
+    <div><b>AI analyst</b>Claude writes and explains SQL</div>
+  </div>
+
+  <h2 class="section" id="walkthrough">Project walkthrough (4 minutes)</h2>
+  <video class="video" controls preload="metadata" src="walkthrough.mp4">
+    Your browser can't play this video. <a href="walkthrough.mp4">Download it instead.</a>
+  </video>
+
+  <h2 class="section">AI analyst results</h2>
+  <p class="meta" id="meta"></p>
+  <main id="results"><p>Loading results…</p></main>
+</div>
+
+<script>
+const palette = ["#2f6fde", "#16a07c", "#d9822b", "#8a5cd6", "#d64561", "#4aa3c7", "#7b8794"];
+
+function el(tag, attrs = {}, text) {
+  const node = document.createElement(tag);
+  Object.entries(attrs).forEach(([k, v]) => node.setAttribute(k, v));
+  if (text !== undefined) node.textContent = text;
+  return node;
+}
+
+function renderTable(columns, rows) {
+  const table = el("table");
+  const head = el("tr");
+  columns.forEach(c => head.appendChild(el("th", {}, c)));
+  table.appendChild(head);
+  rows.slice(0, 15).forEach(r => {
+    const tr = el("tr");
+    r.forEach(v => tr.appendChild(el("td", {}, v ?? "")));
+    table.appendChild(tr);
+  });
+  return table;
+}
+
+function renderChart(container, item) {
+  const { type, x, y } = item.chart || {};
+  const xi = item.columns.indexOf(x), yi = item.columns.indexOf(y);
+  if (!["bar", "line"].includes(type) || xi < 0 || yi < 0) return false;
+  const box = el("div", { class: "chart-box" });
+  const canvas = el("canvas");
+  box.appendChild(canvas);
+  container.appendChild(box);
+  new Chart(canvas, {
+    type,
+    data: {
+      labels: item.rows.map(r => r[xi]),
+      datasets: [{ label: y, data: item.rows.map(r => Number(r[yi])),
+                   backgroundColor: type === "bar" ? palette[0] : "rgba(47,111,222,0.12)",
+                   borderColor: palette[0], borderWidth: 2, fill: type === "line", tension: 0.25 }]
+    },
+    options: { maintainAspectRatio: false, plugins: { legend: { display: false } },
+               scales: { y: { beginAtZero: true, title: { display: true, text: y } } } }
+  });
+  return true;
+}
+
+fetch("data/results.json")
+  .then(r => r.json())
+  .then(data => {
+    document.getElementById("meta").textContent =
+      `Generated ${data.generated_at} with ${data.model_id} on Amazon Bedrock.`;
+    const main = document.getElementById("results");
+    main.innerHTML = "";
+    data.results.forEach(item => {
+      const card = el("section", { class: "card" });
+      card.appendChild(el("h2", {}, item.question));
+      if (item.status !== "ok") {
+        card.appendChild(el("p", { class: "error" }, `The AI could not answer this one: ${item.error}`));
+      } else {
+        card.appendChild(el("p", { class: "answer" }, item.answer));
+        if (!renderChart(card, item)) card.appendChild(renderTable(item.columns, item.rows));
+        const details = el("details");
+        details.appendChild(el("summary", {}, "See the SQL the AI wrote"));
+        details.appendChild(el("p", { class: "approach" }, item.approach));
+        details.appendChild(el("pre", {}, item.sql));
+        details.appendChild(renderTable(item.columns, item.rows));
+        card.appendChild(details);
+      }
+      main.appendChild(card);
+    });
+  })
+  .catch(() => {
+    document.getElementById("results").innerHTML =
+      "<p>No results yet. Run <code>python scripts/ai_analyst.py</code> to generate them.</p>";
+  });
+</script>
+</body>
+</html>

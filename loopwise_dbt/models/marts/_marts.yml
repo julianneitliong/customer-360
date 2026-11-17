@@ -1,0 +1,192 @@
+version: 2
+
+# Descriptions here become the data dictionary (dbt docs) that the AI reads.
+# Tests check the rules that make the numbers trustworthy.
+
+models:
+
+  - name: dim_account
+    description: >
+      One row per real company (customer or prospect) from the CRM, after merging duplicate accounts.
+      This is the parent table: every fact table links here through account_id.
+    columns:
+      - name: account_id
+        description: 15-character Salesforce account ID. Primary key. Case-sensitive.
+        data_tests: [unique, not_null]
+      - name: account_name
+        description: Company name as entered in the CRM.
+      - name: account_domain
+        description: Company website domain, lowercase, without www. Used to match billing and usage records.
+        data_tests: [unique, not_null]
+      - name: is_customer
+        description: True if the account has bought Loopwise (CRM type Customer); false for prospects.
+      - name: segment
+        description: Company size segment, standardized to SMB, Mid-Market or Enterprise.
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['SMB', 'Mid-Market', 'Enterprise']
+      - name: industry
+        description: Industry of the company, from the CRM.
+      - name: country_code
+        description: Two-letter ISO country code of the billing address.
+      - name: region
+        description: Sales region derived from country_code. NA = US and Canada; EMEA = UK, Germany, France; APAC = Australia, Singapore, Japan.
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['NA', 'EMEA', 'APAC']
+      - name: account_owner
+        description: Sales rep who owns the account in the CRM.
+      - name: created_date
+        description: Date the account was created in the CRM.
+
+  - name: fct_subscriptions
+    description: >
+      One row per billing subscription, linked to dim_account. Includes monthly recurring revenue (MRR) in USD.
+      Use this table for revenue questions.
+    columns:
+      - name: subscription_id
+        description: Billing system subscription ID. Primary key.
+        data_tests: [unique, not_null]
+      - name: account_id
+        description: The CRM account this subscription belongs to. Links to dim_account.account_id.
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_account')
+                field: account_id
+      - name: billing_customer_id
+        description: Billing system customer ID (cus_...).
+      - name: plan_name
+        description: Plan name. Starter, Pro (formerly called Team) or Business.
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['Starter', 'Pro', 'Business']
+      - name: billing_interval
+        description: How often the subscription is billed, month or year.
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['month', 'year']
+      - name: seats
+        description: Number of paid seats (licenses) on the subscription.
+      - name: subscription_status
+        description: Billing status, active or canceled.
+      - name: is_active
+        description: True if the subscription is currently active. Only active subscriptions count toward current MRR.
+      - name: started_at
+        description: Date the subscription started.
+      - name: canceled_at
+        description: Date the subscription was canceled. Empty for active subscriptions.
+      - name: mrr_usd
+        description: >
+          Monthly recurring revenue in USD = seats x price per seat, converted to USD.
+          Annual plans are divided by 12. Counts toward current MRR only when is_active is true.
+
+  - name: fct_invoices
+    description: One row per invoice, linked to dim_account, with amounts in USD. Use for billed and collected revenue.
+    columns:
+      - name: invoice_id
+        description: Billing system invoice ID. Primary key.
+        data_tests: [unique, not_null]
+      - name: account_id
+        description: The CRM account this invoice belongs to. Links to dim_account.account_id.
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_account')
+                field: account_id
+      - name: subscription_id
+        description: The subscription this invoice bills.
+      - name: plan_name
+        description: Plan on the invoice. Invoices before July 2026 said Team; these are standardized to Pro.
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['Starter', 'Pro', 'Business']
+      - name: seats
+        description: Seats billed on this invoice.
+      - name: invoice_status
+        description: paid, open (not yet paid) or void (canceled).
+      - name: invoiced_at
+        description: Date the invoice was issued.
+      - name: period_start
+        description: First day of the period this invoice covers.
+      - name: amount_due_usd
+        description: Amount billed, in USD.
+      - name: amount_paid_usd
+        description: Amount actually paid, in USD.
+
+  - name: fct_usage_monthly
+    description: One row per account per month of product usage (January to October 2026). Only usage matched to a CRM account.
+    columns:
+      - name: account_id
+        description: The CRM account. Links to dim_account.account_id.
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_account')
+                field: account_id
+      - name: usage_month
+        description: First day of the month the usage covers.
+      - name: active_users
+        description: Number of people who used Loopwise that month.
+      - name: projects_created
+        description: Projects created that month.
+      - name: api_calls
+        description: API calls that month. Only tracked from May 2026 onward; empty before that.
+
+  - name: mart_account_health
+    description: >
+      One row per account combining who the customer is, what they pay, and how much they use Loopwise.
+      Start here for questions about MRR by segment or region, unused seats, and churn risk.
+    columns:
+      - name: account_id
+        description: 15-character CRM account ID. Primary key; links to dim_account.
+        data_tests: [unique, not_null]
+      - name: account_name
+        description: Company name.
+      - name: segment
+        description: SMB, Mid-Market or Enterprise.
+      - name: region
+        description: NA, EMEA or APAC.
+      - name: industry
+        description: Industry of the company.
+      - name: account_owner
+        description: Sales rep who owns the account.
+      - name: is_customer
+        description: True for customers, false for prospects.
+      - name: plan_name
+        description: Current plan, if any.
+      - name: has_active_subscription
+        description: True if the account has an active subscription today.
+      - name: mrr_usd
+        description: Current monthly recurring revenue in USD from active subscriptions. 0 for churned accounts and prospects.
+      - name: seats_paid
+        description: Seats on active subscriptions.
+      - name: canceled_at
+        description: Most recent subscription cancellation date, if any.
+      - name: active_users_latest
+        description: Active users in the most recent month of usage data (October 2026).
+      - name: active_users_3_months_ago
+        description: Active users three months before the most recent month.
+      - name: seat_utilization
+        description: Share of paid seats used in the latest month (0.25 = 25%). Low values mean the customer pays for seats it doesn't use.
+      - name: usage_change_3_months
+        description: Change in active users over the last three months (-0.40 = down 40%).
+      - name: churn_risk
+        description: >
+          Churned = no active subscription. High = under 35% of paid seats used, or usage down 30% or more in 3 months.
+          Medium = under 60% of seats used. Low = everyone else. Prospect = not a customer yet.
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['Churned', 'High', 'Medium', 'Low', 'Prospect']

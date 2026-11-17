@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: raw
+    description: Raw files landed in S3 and registered in the Glue Data Catalog. Every CSV column is a string.
+    database: awsdatacatalog
+    schema: loopwise_raw
+    tables:
+      - name: crm_accounts
+        description: Salesforce-style Account export. One row per account, including 4 duplicate accounts.
+      - name: crm_contacts
+        description: Salesforce-style Contact export. account_id is a mix of 15- and 18-character IDs.
+      - name: crm_opportunities
+        description: Salesforce-style Opportunity export. Amount is in the currency named in currency_code.
+      - name: billing_customers
+        description: Billing API customers. CRM account ID is in metadata for about 70% of customers.
+      - name: billing_subscriptions
+        description: Billing API subscriptions (nested JSON). One active or canceled subscription per customer.
+      - name: billing_invoices
+        description: Billing API invoices (nested JSON). Amounts in cents, in the customer's currency.
+      - name: usage_monthly
+        description: Monthly product-usage exports. Format changed in May 2026; July was sent twice.

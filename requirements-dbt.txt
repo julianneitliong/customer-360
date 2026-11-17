@@ -1,0 +1,3 @@
+# dbt Core v1 (stable), installed in its own Python 3.12 environment: .venv-dbt
+dbt-core==1.12.7
+dbt-athena-community>=1.8

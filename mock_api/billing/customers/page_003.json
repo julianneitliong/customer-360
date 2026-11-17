@@ -1,0 +1,66 @@
+{
+  "object": "list",
+  "url": "/v1/customers",
+  "has_more": false,
+  "next_page": null,
+  "data": [
+    {
+      "id": "cus_q5AJvZWQBU1oYp",
+      "object": "customer",
+      "name": "Redwood Financial",
+      "email": "billing@redwoodfinancial.com",
+      "currency": "usd",
+      "created": 1750338060,
+      "metadata": {}
+    },
+    {
+      "id": "cus_nBNB6NjawFTkwm",
+      "object": "customer",
+      "name": "Umbra Energy",
+      "email": "billing@umbraenergy.com",
+      "currency": "eur",
+      "created": 1734925620,
+      "metadata": {
+        "crm_account_id": "001Hs0000JAfo16IQB"
+      }
+    },
+    {
+      "id": "cus_nIKlZblj74nzkg",
+      "object": "customer",
+      "name": "Ember Financial",
+      "email": "billing@emberfinancial.com",
+      "currency": "usd",
+      "created": 1729023540,
+      "metadata": {}
+    },
+    {
+      "id": "cus_8iwTTdlccVEYQC",
+      "object": "customer",
+      "name": "Ironleaf Robotics Ltd",
+      "email": "billing@ironleafrobotics.com",
+      "currency": "eur",
+      "created": 1730151120,
+      "metadata": {
+        "crm_account_id": "001Hs0000sUt1LL"
+      }
+    },
+    {
+      "id": "cus_g87THM75FY0853",
+      "object": "customer",
+      "name": "Orbit Outfitters",
+      "email": "owner@selfserve0.io",
+      "currency": "usd",
+      "created": 1775149680,
+      "metadata": {}
+    },
+    {
+      "id": "cus_jh62GTo88x5Hdb",
+      "object": "customer",
+      "name": "Moss & Co",
+      "email": "owner@selfserve1.io",
+      "currency": "usd",
+      "created": 1775235720,
+      "metadata": {}
+    }
+  ]
+}

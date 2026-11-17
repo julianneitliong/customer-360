@@ -1,0 +1,508 @@
+{
+  "object": "list",
+  "url": "/v1/invoices",
+  "has_more": true,
+  "next_page": "page_020.json",
+  "data": [
+    {
+      "id": "in_cI1IRXSUrfwYHx",
+      "object": "invoice",
+      "customer": "cus_NuZDjqt9LHZO7L",
+      "subscription": "sub_xR0smsbNAwW9Bx",
+      "currency": "gbp",
+      "amount_due": 150000,
+      "amount_paid": 150000,
+      "status": "paid",
+      "created": 1778346540,
+      "period_start": 1778323620,
+      "lines": {
+        "data": [
+          {
+            "description": "60 x Business (Monthly)",
+            "quantity": 60
+          }
+        ]
+      }
+    },
+    {
+      "id": "in_NzJx8VjP3Pz7fp",
+      "object": "invoice",
+      "customer": "cus_NuZDjqt9LHZO7L",
+      "subscription": "sub_xR0smsbNAwW9Bx",
+      "currency": "gbp",
+      "amount_due": 150000,
+      "amount_paid": 150000,
+      "status": "paid",
+      "created": 1781036940,
+      "period_start": 1781016480,
+      "lines": {
+        "data": [
+          {
+            "description": "60 x Business (Monthly)",
+            "quantity": 60
+          }
+        ]
+      }
+    },
+    {
+      "id": "in_HQ3v48ivNU0J8X",
+      "object": "invoice",
+      "customer": "cus_NuZDjqt9LHZO7L",
+      "subscription": "sub_xR0smsbNAwW9Bx",
+      "currency": "gbp",
+      "amount_due": 150000,
+      "amount_paid": 150000,
+      "status": "paid",
+      "created": 1783605360,
+      "period_start": 1783567920,
+      "lines": {
+        "data": [
+          {
+            "description": "60 x Business (Monthly)",
+            "quantity": 60
+          }
+        ]
+      }
+    },
+    {
+      "id": "in_HGJpI6TQWEuZx6",
+      "object": "invoice",
+      "customer": "cus_NuZDjqt9LHZO7L",
+      "subscription": "sub_xR0smsbNAwW9Bx",
+      "currency": "gbp",
+      "amount_due": 150000,
+      "amount_paid": 150000,
+      "status": "paid",
+      "created": 1786260960,
+      "period_start": 1786276020,
+      "lines": {
+        "data": [
+          {
+            "description": "60 x Business (Monthly)",
+            "quantity": 60
+          }
+        ]
+      }
+    },
+    {
+      "id": "in_zUgNCZ3laXFgie",
+      "object": "invoice",
+      "customer": "cus_NuZDjqt9LHZO7L",
+      "subscription": "sub_xR0smsbNAwW9Bx",
+      "currency": "gbp",
+      "amount_due": 150000,
+      "amount_paid": 0,
+      "status": "paid",
+      "created": 1788956340,
+      "period_start": 1788935640,
+      "lines": {
+        "data": [
+          {
+            "description": "60 x Business (Monthly)",
+            "quantity": 60
+          }
+        ]
+      }
+    },
+    {
+      "id": "in_N6lbsmZQeCh6Pa",
+      "object": "invoice",
+      "customer": "cus_NuZDjqt9LHZO7L",
+      "subscription": "sub_xR0smsbNAwW9Bx",
+      "currency": "gbp",
+      "amount_due": 150000,
+      "amount_paid": 150000,
+      "status": "paid",
+      "created": 1791544380,
+      "period_start": 1791538020,
+      "lines": {
+        "data": [
+          {
+            "description": "60 x Business (Monthly)",
+            "quantity": 60
+          }
+        ]
+      }
+    },
+    {
+      "id": "in_fQKPbFelrJXHSp",
+      "object": "invoice",
+      "customer": "cus_M5NKQ8EvpDXUVA",
+      "subscription": "sub_pfpZNfxuLDuIRB",
+      "currency": "eur",
+      "amount_due": 10500,
+      "amount_paid": 10500,
+      "status": "paid",
+      "created": 1768543020,
+      "period_start": 1768573080,
+      "lines": {
+        "data": [
+          {
+            "description": "7 x Team (Monthly)",
+            "quantity": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "in_0cLAQ8eDpyUOkx",
+      "object": "invoice",
+      "customer": "cus_M5NKQ8EvpDXUVA",
+      "subscription": "sub_pfpZNfxuLDuIRB",
+      "currency": "eur",
+      "amount_due": 10500,
+      "amount_paid": 10500,
+      "status": "paid",
+      "created": 1771277820,
+      "period_start": 1771254840,
+      "lines": {
+        "data": [
+          {
+            "description": "7 x Team (Monthly)",
+            "quantity": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "in_SY6hki8LbEXAR3",
+      "object": "invoice",
+      "customer": "cus_M5NKQ8EvpDXUVA",
+      "subscription": "sub_pfpZNfxuLDuIRB",
+      "currency": "eur",
+      "amount_due": 10500,
+      "amount_paid": 10500,
+      "status": "paid",
+      "created": 1773667800,
+      "period_start": 1773623820,
+      "lines": {
+        "data": [
+          {
+            "description": "7 x Team (Monthly)",
+            "quantity": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "in_BRef2PDFp5ibfl",
+      "object": "invoice",
+      "customer": "cus_M5NKQ8EvpDXUVA",
+      "subscription": "sub_pfpZNfxuLDuIRB",
+      "currency": "eur",
+      "amount_due": 10500,
+      "amount_paid": 10500,
+      "status": "paid",
+      "created": 1776360180,
+      "period_start": 1776359760,
+      "lines": {
+        "data": [
+          {
+            "description": "7 x Team (Monthly)",
+            "quantity": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "in_D8OKhcmsUyxFaG",
+      "object": "invoice",
+      "customer": "cus_M5NKQ8EvpDXUVA",
+      "subscription": "sub_pfpZNfxuLDuIRB",
+      "currency": "eur",
+      "amount_due": 10500,
+      "amount_paid": 10500,
+      "status": "paid",
+      "created": 1778925360,
+      "period_start": 1778905200,
+      "lines": {
+        "data": [
+          {
+            "description": "7 x Team (Monthly)",
+            "quantity": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "in_51XlDDgyNHXjhF",
+      "object": "invoice",
+      "customer": "cus_M5NKQ8EvpDXUVA",
+      "subscription": "sub_pfpZNfxuLDuIRB",
+      "currency": "eur",
+      "amount_due": 10500,
+      "amount_paid": 10500,
+      "status": "paid",
+      "created": 1781625840,
+      "period_start": 1781633400,
+      "lines": {
+        "data": [
+          {
+            "description": "7 x Team (Monthly)",
+            "quantity": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "in_pU0wnqdA1WbP5y",
+      "object": "invoice",
+      "customer": "cus_M5NKQ8EvpDXUVA",
+      "subscription": "sub_pfpZNfxuLDuIRB",
+      "currency": "eur",
+      "amount_due": 10500,
+      "amount_paid": 10500,
+      "status": "paid",
+      "created": 1784246280,
+      "period_start": 1784176200,
+      "lines": {
+        "data": [
+          {
+            "description": "7 x Pro (Monthly)",
+            "quantity": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "in_MX3OUjLrVAbef3",
+      "object": "invoice",
+      "customer": "cus_M5NKQ8EvpDXUVA",
+      "subscription": "sub_pfpZNfxuLDuIRB",
+      "currency": "eur",
+      "amount_due": 10500,
+      "amount_paid": 10500,
+      "status": "paid",
+      "created": 1786879020,
+      "period_start": 1786882620,
+      "lines": {
+        "data": [
+          {
+            "description": "7 x Pro (Monthly)",
+            "quantity": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "in_CY4sHut6Fx2QR5",
+      "object": "invoice",
+      "customer": "cus_M5NKQ8EvpDXUVA",
+      "subscription": "sub_pfpZNfxuLDuIRB",
+      "currency": "eur",
+      "amount_due": 10500,
+      "amount_paid": 10500,
+      "status": "paid",
+      "created": 1789582080,
+      "period_start": 1789572060,
+      "lines": {
+        "data": [
+          {
+            "description": "7 x Pro (Monthly)",
+            "quantity": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "in_fEvGNpqqrFt44J",
+      "object": "invoice",
+      "customer": "cus_M5NKQ8EvpDXUVA",
+      "subscription": "sub_pfpZNfxuLDuIRB",
+      "currency": "eur",
+      "amount_due": 10500,
+      "amount_paid": 10500,
+      "status": "paid",
+      "created": 1792146780,
+      "period_start": 1792185960,
+      "lines": {
+        "data": [
+          {
+            "description": "7 x Pro (Monthly)",
+            "quantity": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "in_eYpE5IYFAq8MEg",
+      "object": "invoice",
+      "customer": "cus_rLPlMWXQlQSImC",
+      "subscription": "sub_ZlOEpEqJHjLp7Y",
+      "currency": "usd",
+      "amount_due": 21000,
+      "amount_paid": 21000,
+      "status": "paid",
+      "created": 1755576660,
+      "period_start": 1755573780,
+      "lines": {
+        "data": [
+          {
+            "description": "14 x Team (Monthly)",
+            "quantity": 14
+          }
+        ]
+      }
+    },
+    {
+      "id": "in_V9cegHhfUAcOdg",
+      "object": "invoice",
+      "customer": "cus_rLPlMWXQlQSImC",
+      "subscription": "sub_ZlOEpEqJHjLp7Y",
+      "currency": "usd",
+      "amount_due": 21000,
+      "amount_paid": 0,
+      "status": "paid",
+      "created": 1758274020,
+      "period_start": 1758266040,
+      "lines": {
+        "data": [
+          {
+            "description": "14 x Team (Monthly)",
+            "quantity": 14
+          }
+        ]
+      }
+    },
+    {
+      "id": "in_nLU5vobKVk7xHb",
+      "object": "invoice",
+      "customer": "cus_rLPlMWXQlQSImC",
+      "subscription": "sub_ZlOEpEqJHjLp7Y",
+      "currency": "usd",
+      "amount_due": 21000,
+      "amount_paid": 21000,
+      "status": "paid",
+      "created": 1760901420,
+      "period_start": 1760886420,
+      "lines": {
+        "data": [
+          {
+            "description": "14 x Team (Monthly)",
+            "quantity": 14
+          }
+        ]
+      }
+    },
+    {
+      "id": "in_f0nCkkngotJLxn",
+      "object": "invoice",
+      "customer": "cus_rLPlMWXQlQSImC",
+      "subscription": "sub_ZlOEpEqJHjLp7Y",
+      "currency": "usd",
+      "amount_due": 21000,
+      "amount_paid": 21000,
+      "status": "paid",
+      "created": 1763591280,
+      "period_start": 1763561340,
+      "lines": {
+        "data": [
+          {
+            "description": "14 x Team (Monthly)",
+            "quantity": 14
+          }
+        ]
+      }
+    },
+    {
+      "id": "in_TxMxHq2EWGtEMZ",
+      "object": "invoice",
+      "customer": "cus_rLPlMWXQlQSImC",
+      "subscription": "sub_ZlOEpEqJHjLp7Y",
+      "currency": "usd",
+      "amount_due": 21000,
+      "amount_paid": 21000,
+      "status": "paid",
+      "created": 1766181840,
+      "period_start": 1766173980,
+      "lines": {
+        "data": [
+          {
+            "description": "14 x Team (Monthly)",
+            "quantity": 14
+          }
+        ]
+      }
+    },
+    {
+      "id": "in_RxWmtzpsoLDb5p",
+      "object": "invoice",
+      "customer": "cus_rLPlMWXQlQSImC",
+      "subscription": "sub_ZlOEpEqJHjLp7Y",
+      "currency": "usd",
+      "amount_due": 21000,
+      "amount_paid": 21000,
+      "status": "paid",
+      "created": 1768782240,
+      "period_start": 1768846920,
+      "lines": {
+        "data": [
+          {
+            "description": "14 x Team (Monthly)",
+            "quantity": 14
+          }
+        ]
+      }
+    },
+    {
+      "id": "in_wbBBABvq4qjnKG",
+      "object": "invoice",
+      "customer": "cus_rLPlMWXQlQSImC",
+      "subscription": "sub_ZlOEpEqJHjLp7Y",
+      "currency": "usd",
+      "amount_due": 21000,
+      "amount_paid": 21000,
+      "status": "paid",
+      "created": 1771464240,
+      "period_start": 1771498980,
+      "lines": {
+        "data": [
+          {
+            "description": "14 x Team (Monthly)",
+            "quantity": 14
+          }
+        ]
+      }
+    },
+    {
+      "id": "in_Vf4fRde5Cs1r4o",
+      "object": "invoice",
+      "customer": "cus_rLPlMWXQlQSImC",
+      "subscription": "sub_ZlOEpEqJHjLp7Y",
+      "currency": "usd",
+      "amount_due": 21000,
+      "amount_paid": 21000,
+      "status": "paid",
+      "created": 1773906900,
+      "period_start": 1773887940,
+      "lines": {
+        "data": [
+          {
+            "description": "14 x Team (Monthly)",
+            "quantity": 14
+          }
+        ]
+      }
+    },
+    {
+      "id": "in_dOW76kH63oYmSe",
+      "object": "invoice",
+      "customer": "cus_rLPlMWXQlQSImC",
+      "subscription": "sub_ZlOEpEqJHjLp7Y",
+      "currency": "usd",
+      "amount_due": 21000,
+      "amount_paid": 21000,
+      "status": "paid",
+      "created": 1776576840,
+      "period_start": 1776570540,
+      "lines": {
+        "data": [
+          {
+            "description": "14 x Team (Monthly)",
+            "quantity": 14
+          }
+        ]
+      }
+    }
+  ]
+}

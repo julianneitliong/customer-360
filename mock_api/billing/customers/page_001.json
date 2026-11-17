@@ -1,0 +1,271 @@
+{
+  "object": "list",
+  "url": "/v1/customers",
+  "has_more": true,
+  "next_page": "page_002.json",
+  "data": [
+    {
+      "id": "cus_Uk4Ybn9nbFhSXx",
+      "object": "customer",
+      "name": "UMBRA LOGISTICS",
+      "email": "billing@umbralogistics.com",
+      "currency": "usd",
+      "created": 1717103160,
+      "metadata": {}
+    },
+    {
+      "id": "cus_pSbGVFFEsOtff8",
+      "object": "customer",
+      "name": "Quill Energy",
+      "email": "billing@quillenergy.com",
+      "currency": "usd",
+      "created": 1753910820,
+      "metadata": {
+        "crm_account_id": "001Hs0000CLrZ3a"
+      }
+    },
+    {
+      "id": "cus_hPDKOzphKiF3jk",
+      "object": "customer",
+      "name": "Yellowtail Foods, Inc.",
+      "email": "hayden94@gmail.com",
+      "currency": "usd",
+      "created": 1736475180,
+      "metadata": {
+        "crm_account_id": "001Hs0000ZcUDIh"
+      }
+    },
+    {
+      "id": "cus_1r2zlRWJhaOQtw",
+      "object": "customer",
+      "name": "Tidewater Foods, Inc.",
+      "email": "billing@tidewaterfoods.com",
+      "currency": "eur",
+      "created": 1711460160,
+      "metadata": {
+        "crm_account_id": "001Hs0000Xsf2o3IQA"
+      }
+    },
+    {
+      "id": "cus_LFokcoaj9WvyKG",
+      "object": "customer",
+      "name": "Lumen Health",
+      "email": "billing@lumenhealth.com",
+      "currency": "usd",
+      "created": 1713896520,
+      "metadata": {}
+    },
+    {
+      "id": "cus_opqoZZwWhe7Ea1",
+      "object": "customer",
+      "name": "Aurora Labs",
+      "email": "billing@auroralabs.com",
+      "currency": "usd",
+      "created": 1741708620,
+      "metadata": {}
+    },
+    {
+      "id": "cus_rHQEUsVXLXHl2B",
+      "object": "customer",
+      "name": "Delta Financial, Inc.",
+      "email": "billing@deltafinancial.com",
+      "currency": "usd",
+      "created": 1756192560,
+      "metadata": {
+        "crm_account_id": "001Hs0000VLB5LzIQL"
+      }
+    },
+    {
+      "id": "cus_HqyARVDmyJI9Gp",
+      "object": "customer",
+      "name": "BLUEFIN LOGISTICS",
+      "email": "billing@bluefinlogistics.com",
+      "currency": "usd",
+      "created": 1742269320,
+      "metadata": {}
+    },
+    {
+      "id": "cus_s2x8FS4ELfm7IS",
+      "object": "customer",
+      "name": "Redwood Media",
+      "email": "billing@redwoodmedia.com",
+      "currency": "usd",
+      "created": 1708384200,
+      "metadata": {
+        "crm_account_id": "001Hs0000x41ZtpIAE"
+      }
+    },
+    {
+      "id": "cus_PW2CbDvCkVLhgY",
+      "object": "customer",
+      "name": "Pinecrest Logistics",
+      "email": "billing@pinecrestlogistics.com",
+      "currency": "usd",
+      "created": 1718807100,
+      "metadata": {
+        "crm_account_id": "001Hs00008JkqH3IAJ"
+      }
+    },
+    {
+      "id": "cus_KLF00d38aI8grb",
+      "object": "customer",
+      "name": "Maple Foods",
+      "email": "billing@maplefoods.com",
+      "currency": "usd",
+      "created": 1728167040,
+      "metadata": {}
+    },
+    {
+      "id": "cus_v2LWNLk81f1E9K",
+      "object": "customer",
+      "name": "Copper Labs",
+      "email": "billing@copperlabs.com",
+      "currency": "usd",
+      "created": 1730445600,
+      "metadata": {
+        "crm_account_id": "001Hs0000nIiU74IAF"
+      }
+    },
+    {
+      "id": "cus_Is1le0DQl9EgBO",
+      "object": "customer",
+      "name": "Driftwood Robotics",
+      "email": "billing@driftwoodrobotics.com",
+      "currency": "usd",
+      "created": 1709855940,
+      "metadata": {
+        "crm_account_id": "001Hs0000PgdzUv"
+      }
+    },
+    {
+      "id": "cus_NcSWd3tsd73P2y",
+      "object": "customer",
+      "name": "Ember Robotics, Inc.",
+      "email": "billing@emberrobotics.com",
+      "currency": "usd",
+      "created": 1744303320,
+      "metadata": {
+        "crm_account_id": "001Hs00002JgdPIIAZ"
+      }
+    },
+    {
+      "id": "cus_PhSl1WrEi1L9rP",
+      "object": "customer",
+      "name": "Pinecrest Studios Ltd",
+      "email": "billing@pinecreststudios.com",
+      "currency": "gbp",
+      "created": 1720424340,
+      "metadata": {
+        "crm_account_id": "001Hs0000yq7YYDIA2"
+      }
+    },
+    {
+      "id": "cus_3MMBvYOW2fHyS2",
+      "object": "customer",
+      "name": "JUNIPER STUDIOS",
+      "email": "billing@juniperstudios.com",
+      "currency": "usd",
+      "created": 1711743000,
+      "metadata": {
+        "crm_account_id": "001Hs0000ddLEG6IAO"
+      }
+    },
+    {
+      "id": "cus_kFEC8FGRCcjI5h",
+      "object": "customer",
+      "name": "Cedar Energy Ltd",
+      "email": "billing@cedarenergy.com",
+      "currency": "eur",
+      "created": 1743048420,
+      "metadata": {
+        "crm_account_id": "001Hs00004KpLMc"
+      }
+    },
+    {
+      "id": "cus_GUFbOG7rmZ0JfH",
+      "object": "customer",
+      "name": "GRANITE FOODS",
+      "email": "billing@granitefoods.com",
+      "currency": "usd",
+      "created": 1731148020,
+      "metadata": {
+        "crm_account_id": "001Hs00007W7eaD"
+      }
+    },
+    {
+      "id": "cus_qe3sFHerohwHuP",
+      "object": "customer",
+      "name": "EMBER FOODS",
+      "email": "billing@emberfoods.com",
+      "currency": "eur",
+      "created": 1738651500,
+      "metadata": {
+        "crm_account_id": "001Hs0000C1ITtNIQW"
+      }
+    },
+    {
+      "id": "cus_8e42kAQFH2KTU5",
+      "object": "customer",
+      "name": "Copper Logistics",
+      "email": "billing@copperlogistics.com",
+      "currency": "usd",
+      "created": 1723884420,
+      "metadata": {
+        "crm_account_id": "001Hs0000nRO2qGIAT"
+      }
+    },
+    {
+      "id": "cus_GR1IL3k6yvT8GK",
+      "object": "customer",
+      "name": "Northstar Analytics",
+      "email": "billing@northstaranalytics.com",
+      "currency": "usd",
+      "created": 1730498940,
+      "metadata": {
+        "crm_account_id": "001Hs0000CJTBJa"
+      }
+    },
+    {
+      "id": "cus_LL7P2Gne0F7Axx",
+      "object": "customer",
+      "name": "Beacon Labs",
+      "email": "billing@beaconlabs.com",
+      "currency": "usd",
+      "created": 1736068740,
+      "metadata": {
+        "crm_account_id": "001Hs0000Y3oobQIQQ"
+      }
+    },
+    {
+      "id": "cus_678hEEQhUWyTTZ",
+      "object": "customer",
+      "name": "Yellowtail Analytics, Inc.",
+      "email": "billing@yellowtailanalytics.com",
+      "currency": "usd",
+      "created": 1752751920,
+      "metadata": {
+        "crm_account_id": "001Hs0000bh4qlL"
+      }
+    },
+    {
+      "id": "cus_OtySWDeJ7rf9lx",
+      "object": "customer",
+      "name": "ZEPHYR FOODS",
+      "email": "taylor93@outlook.com",
+      "currency": "gbp",
+      "created": 1716035160,
+      "metadata": {
+        "crm_account_id": "001Hs0000KmqcTB"
+      }
+    },
+    {
+      "id": "cus_bR5exUiCNwo3sH",
+      "object": "customer",
+      "name": "Vantage Foods, Inc.",
+      "email": "billing@vantagefoods.com",
+      "currency": "usd",
+      "created": 1733128920,
+      "metadata": {}
+    }
+  ]
+}

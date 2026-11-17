@@ -1,0 +1,100 @@
+{
+  "object": "list",
+  "url": "/v1/subscriptions",
+  "has_more": false,
+  "next_page": null,
+  "data": [
+    {
+      "id": "sub_JBTERHNy5hDd1E",
+      "object": "subscription",
+      "customer": "cus_q5AJvZWQBU1oYp",
+      "status": "active",
+      "start_date": 1750768380,
+      "canceled_at": null,
+      "currency": "usd",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Starter Monthly",
+              "unit_amount": 800,
+              "recurring": {
+                "interval": "month"
+              }
+            },
+            "quantity": 20
+          }
+        ]
+      }
+    },
+    {
+      "id": "sub_ZhL2NMMdT2GzEm",
+      "object": "subscription",
+      "customer": "cus_nBNB6NjawFTkwm",
+      "status": "active",
+      "start_date": 1735752540,
+      "canceled_at": null,
+      "currency": "eur",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Pro Annual",
+              "unit_amount": 15000,
+              "recurring": {
+                "interval": "year"
+              }
+            },
+            "quantity": 146
+          }
+        ]
+      }
+    },
+    {
+      "id": "sub_IokORpJ3mItzEN",
+      "object": "subscription",
+      "customer": "cus_nIKlZblj74nzkg",
+      "status": "active",
+      "start_date": 1735775220,
+      "canceled_at": null,
+      "currency": "usd",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Business Annual",
+              "unit_amount": 25000,
+              "recurring": {
+                "interval": "year"
+              }
+            },
+            "quantity": 763
+          }
+        ]
+      }
+    },
+    {
+      "id": "sub_H5X5XYcb8oyfJX",
+      "object": "subscription",
+      "customer": "cus_8iwTTdlccVEYQC",
+      "status": "canceled",
+      "start_date": 1735726020,
+      "canceled_at": 1784642640,
+      "currency": "eur",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Pro Monthly",
+              "unit_amount": 1500,
+              "recurring": {
+                "interval": "month"
+              }
+            },
+            "quantity": 19
+          }
+        ]
+      }
+    }
+  ]
+}

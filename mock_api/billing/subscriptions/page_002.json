@@ -1,0 +1,583 @@
+{
+  "object": "list",
+  "url": "/v1/subscriptions",
+  "has_more": true,
+  "next_page": "page_003.json",
+  "data": [
+    {
+      "id": "sub_2AUYMLAJxNdkcF",
+      "object": "subscription",
+      "customer": "cus_D7vIsUEFylkQ3r",
+      "status": "active",
+      "start_date": 1735755960,
+      "canceled_at": null,
+      "currency": "usd",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Business Annual",
+              "unit_amount": 25000,
+              "recurring": {
+                "interval": "year"
+              }
+            },
+            "quantity": 81
+          }
+        ]
+      }
+    },
+    {
+      "id": "sub_bDZzstveWEcs9E",
+      "object": "subscription",
+      "customer": "cus_mXE9AhkuxJrN19",
+      "status": "active",
+      "start_date": 1735765080,
+      "canceled_at": null,
+      "currency": "gbp",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Business Monthly",
+              "unit_amount": 2500,
+              "recurring": {
+                "interval": "month"
+              }
+            },
+            "quantity": 111
+          }
+        ]
+      }
+    },
+    {
+      "id": "sub_ToPEQuoV4Xg2Tx",
+      "object": "subscription",
+      "customer": "cus_1iWO5e0D7LlRFO",
+      "status": "active",
+      "start_date": 1735739940,
+      "canceled_at": null,
+      "currency": "usd",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Starter Monthly",
+              "unit_amount": 800,
+              "recurring": {
+                "interval": "month"
+              }
+            },
+            "quantity": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": "sub_3KwOxBFK6gsvI3",
+      "object": "subscription",
+      "customer": "cus_osuZuLgSe564NT",
+      "status": "canceled",
+      "start_date": 1735756320,
+      "canceled_at": 1780665480,
+      "currency": "eur",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Business Annual",
+              "unit_amount": 25000,
+              "recurring": {
+                "interval": "year"
+              }
+            },
+            "quantity": 720
+          }
+        ]
+      }
+    },
+    {
+      "id": "sub_rNFWRt5A5Xt0O2",
+      "object": "subscription",
+      "customer": "cus_GZsgR0BAq19Thv",
+      "status": "active",
+      "start_date": 1756086000,
+      "canceled_at": null,
+      "currency": "usd",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Pro Monthly",
+              "unit_amount": 1500,
+              "recurring": {
+                "interval": "month"
+              }
+            },
+            "quantity": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "sub_3dFBPuFhIxxDtG",
+      "object": "subscription",
+      "customer": "cus_XKVuVKrY2PDkW9",
+      "status": "active",
+      "start_date": 1770134700,
+      "canceled_at": null,
+      "currency": "usd",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Pro Monthly",
+              "unit_amount": 1500,
+              "recurring": {
+                "interval": "month"
+              }
+            },
+            "quantity": 65
+          }
+        ]
+      }
+    },
+    {
+      "id": "sub_BMKRTDpSLDyc5o",
+      "object": "subscription",
+      "customer": "cus_DCuIO3tgw3jDu3",
+      "status": "active",
+      "start_date": 1735747560,
+      "canceled_at": null,
+      "currency": "eur",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Pro Annual",
+              "unit_amount": 15000,
+              "recurring": {
+                "interval": "year"
+              }
+            },
+            "quantity": 140
+          }
+        ]
+      }
+    },
+    {
+      "id": "sub_wFaLyeoEcsfxlj",
+      "object": "subscription",
+      "customer": "cus_ynDxCp4yt5yurP",
+      "status": "canceled",
+      "start_date": 1735723440,
+      "canceled_at": 1783893120,
+      "currency": "usd",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Pro Monthly",
+              "unit_amount": 1500,
+              "recurring": {
+                "interval": "month"
+              }
+            },
+            "quantity": 12
+          }
+        ]
+      }
+    },
+    {
+      "id": "sub_M7Fq70HeXBGpXl",
+      "object": "subscription",
+      "customer": "cus_kGk3a6vtnrWWOw",
+      "status": "canceled",
+      "start_date": 1735764840,
+      "canceled_at": 1781334840,
+      "currency": "usd",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Pro Monthly",
+              "unit_amount": 1500,
+              "recurring": {
+                "interval": "month"
+              }
+            },
+            "quantity": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "sub_z3B1YaD3puH7Pf",
+      "object": "subscription",
+      "customer": "cus_0MbbbDTizHVSkg",
+      "status": "active",
+      "start_date": 1746892020,
+      "canceled_at": null,
+      "currency": "usd",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Pro Monthly",
+              "unit_amount": 1500,
+              "recurring": {
+                "interval": "month"
+              }
+            },
+            "quantity": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "sub_tYLSSNI9CJdMEB",
+      "object": "subscription",
+      "customer": "cus_lGyJ3yqXwXAw5o",
+      "status": "canceled",
+      "start_date": 1735707660,
+      "canceled_at": 1789752480,
+      "currency": "usd",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Business Monthly",
+              "unit_amount": 2500,
+              "recurring": {
+                "interval": "month"
+              }
+            },
+            "quantity": 786
+          }
+        ]
+      }
+    },
+    {
+      "id": "sub_T2PWfa1d0t3mjn",
+      "object": "subscription",
+      "customer": "cus_GlBRxPqUIjyWmz",
+      "status": "active",
+      "start_date": 1773714180,
+      "canceled_at": null,
+      "currency": "usd",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Starter Annual",
+              "unit_amount": 8000,
+              "recurring": {
+                "interval": "year"
+              }
+            },
+            "quantity": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": "sub_isyj9XP7tS6fLX",
+      "object": "subscription",
+      "customer": "cus_48PjBUixxkbQY5",
+      "status": "active",
+      "start_date": 1767659940,
+      "canceled_at": null,
+      "currency": "eur",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Starter Monthly",
+              "unit_amount": 800,
+              "recurring": {
+                "interval": "month"
+              }
+            },
+            "quantity": 23
+          }
+        ]
+      }
+    },
+    {
+      "id": "sub_MLLGvxQhJDbwp6",
+      "object": "subscription",
+      "customer": "cus_oESA6j8d7euDro",
+      "status": "canceled",
+      "start_date": 1743891240,
+      "canceled_at": 1787395200,
+      "currency": "usd",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Starter Annual",
+              "unit_amount": 8000,
+              "recurring": {
+                "interval": "year"
+              }
+            },
+            "quantity": 18
+          }
+        ]
+      }
+    },
+    {
+      "id": "sub_xR0smsbNAwW9Bx",
+      "object": "subscription",
+      "customer": "cus_NuZDjqt9LHZO7L",
+      "status": "active",
+      "start_date": 1749447480,
+      "canceled_at": null,
+      "currency": "gbp",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Business Monthly",
+              "unit_amount": 2500,
+              "recurring": {
+                "interval": "month"
+              }
+            },
+            "quantity": 60
+          }
+        ]
+      }
+    },
+    {
+      "id": "sub_pfpZNfxuLDuIRB",
+      "object": "subscription",
+      "customer": "cus_M5NKQ8EvpDXUVA",
+      "status": "active",
+      "start_date": 1768591560,
+      "canceled_at": null,
+      "currency": "eur",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Pro Monthly",
+              "unit_amount": 1500,
+              "recurring": {
+                "interval": "month"
+              }
+            },
+            "quantity": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "sub_ZlOEpEqJHjLp7Y",
+      "object": "subscription",
+      "customer": "cus_rLPlMWXQlQSImC",
+      "status": "active",
+      "start_date": 1755604800,
+      "canceled_at": null,
+      "currency": "usd",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Pro Monthly",
+              "unit_amount": 1500,
+              "recurring": {
+                "interval": "month"
+              }
+            },
+            "quantity": 14
+          }
+        ]
+      }
+    },
+    {
+      "id": "sub_iVmMrncaizmX2A",
+      "object": "subscription",
+      "customer": "cus_vuwXK2VAFPHUF9",
+      "status": "active",
+      "start_date": 1735755360,
+      "canceled_at": null,
+      "currency": "eur",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Pro Monthly",
+              "unit_amount": 1500,
+              "recurring": {
+                "interval": "month"
+              }
+            },
+            "quantity": 11
+          }
+        ]
+      }
+    },
+    {
+      "id": "sub_3Uc4AOqde6KgDD",
+      "object": "subscription",
+      "customer": "cus_Lgh8VthJKedtVU",
+      "status": "canceled",
+      "start_date": 1735730700,
+      "canceled_at": 1785863160,
+      "currency": "usd",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Pro Monthly",
+              "unit_amount": 1500,
+              "recurring": {
+                "interval": "month"
+              }
+            },
+            "quantity": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": "sub_SrjxhzXF9wdtkJ",
+      "object": "subscription",
+      "customer": "cus_jPHrGVjZrMcxcA",
+      "status": "canceled",
+      "start_date": 1735772520,
+      "canceled_at": 1781286300,
+      "currency": "usd",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Pro Annual",
+              "unit_amount": 15000,
+              "recurring": {
+                "interval": "year"
+              }
+            },
+            "quantity": 97
+          }
+        ]
+      }
+    },
+    {
+      "id": "sub_Ccy6Nj6xs2lWSw",
+      "object": "subscription",
+      "customer": "cus_qjeRMskJPTzjpA",
+      "status": "active",
+      "start_date": 1770140580,
+      "canceled_at": null,
+      "currency": "usd",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Business Monthly",
+              "unit_amount": 2500,
+              "recurring": {
+                "interval": "month"
+              }
+            },
+            "quantity": 611
+          }
+        ]
+      }
+    },
+    {
+      "id": "sub_sDPI3icoxSdPBR",
+      "object": "subscription",
+      "customer": "cus_dAIBgMEVNinGqU",
+      "status": "active",
+      "start_date": 1746820320,
+      "canceled_at": null,
+      "currency": "eur",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Pro Annual",
+              "unit_amount": 15000,
+              "recurring": {
+                "interval": "year"
+              }
+            },
+            "quantity": 39
+          }
+        ]
+      }
+    },
+    {
+      "id": "sub_NCz3NknI9oLuP4",
+      "object": "subscription",
+      "customer": "cus_bFtM8mkllWYsi8",
+      "status": "active",
+      "start_date": 1735762500,
+      "canceled_at": null,
+      "currency": "usd",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Business Annual",
+              "unit_amount": 25000,
+              "recurring": {
+                "interval": "year"
+              }
+            },
+            "quantity": 114
+          }
+        ]
+      }
+    },
+    {
+      "id": "sub_9h8ymflLZZb6xd",
+      "object": "subscription",
+      "customer": "cus_J8UplqHoXtFMcb",
+      "status": "canceled",
+      "start_date": 1744921020,
+      "canceled_at": 1788401880,
+      "currency": "usd",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Starter Annual",
+              "unit_amount": 8000,
+              "recurring": {
+                "interval": "year"
+              }
+            },
+            "quantity": 23
+          }
+        ]
+      }
+    },
+    {
+      "id": "sub_03kgLagUoFPiEJ",
+      "object": "subscription",
+      "customer": "cus_5eWb6Pq8mCfi5w",
+      "status": "canceled",
+      "start_date": 1742124240,
+      "canceled_at": 1780801920,
+      "currency": "usd",
+      "items": {
+        "data": [
+          {
+            "price": {
+              "nickname": "Starter Annual",
+              "unit_amount": 8000,
+              "recurring": {
+                "interval": "year"
+              }
+            },
+            "quantity": 17
+          }
+        ]
+      }
+    }
+  ]
+}

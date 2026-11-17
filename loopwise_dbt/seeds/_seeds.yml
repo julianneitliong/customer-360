@@ -1,0 +1,12 @@
+version: 2
+
+seeds:
+  - name: fx_rates_to_usd
+    description: >
+      Fixed exchange rates used to convert EUR and GBP amounts to USD.
+      Illustrative rates for this demo project; a real pipeline would load daily rates.
+    columns:
+      - name: currency_code
+        description: ISO currency code (USD, EUR, GBP).
+      - name: rate_to_usd
+        description: Multiply an amount in this currency by this rate to get USD.

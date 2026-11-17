@@ -1,0 +1,65 @@
+Id,Name,Website,Type,Customer_Segment__c,Industry,BillingCountry,OwnerName,CreatedDate
+001Hs0000C1ITtNIQW,Ember Foods,emberfoods.com,Customer,enterprise,Software,United Kingdom,Dana Ortiz,2025-01-13T00:00:00.000+0000
+001Hs0000VLB5LzIQL,Delta Financial,https://www.deltafinancial.com/,Customer,Small Business,Manufacturing,Japan,Marcus Lee,2025-07-28T00:00:00.000+0000
+001Hs0000RV5IfLIQV,Umbra Logistics,https://www.umbralogistics.com/,Customer,SMB ,Retail,US,Priya Shah,2024-05-22T00:00:00.000+0000
+001Hs0000ArnWGhIQM,GRANITE HEALTH,GRANITEHEALTH.COM,Customer,,,,Sam Whitfield,2024-06-09T00:00:00.000+0000
+001Hs0000vbLJoLIAW,Maple Foods,https://www.maplefoods.com/,Customer,smb,Media,Canada,Priya Shah,2024-09-10T00:00:00.000+0000
+001Hs00004KpLMcIAN,Cedar Energy,cedarenergy.com,Customer,SMB ,Logistics,Germany,Sam Whitfield,2025-02-17T00:00:00.000+0000
+001Hs0000CJTBJaIQP,Northstar Analytics,www.northstaranalytics.com,Customer,smb,Logistics,US,Priya Shah,2024-09-25T00:00:00.000+0000
+001Hs0000yq7YYDIA2,Pinecrest Studios,https://www.pinecreststudios.com/,Customer,Enterprise,Financial Services,UK,Sam Whitfield,2024-06-17T00:00:00.000+0000
+001Hs0000nBYLMPIA5,Copper Health,https://copperhealth.com,Customer,MM,Manufacturing,Australia,Sam Whitfield,2024-01-01T00:00:00.000+0000
+001Hs0000sRRLFHIA5,"Harbor Robotics, LLC",HARBORROBOTICS.COM,Customer,,,,Dana Ortiz,2024-04-28T00:00:00.000+0000
+001Hs0000gB9xO5IAJ,Northstar Foods,northstarfoods.com,Customer,SMB ,Energy,USA,Marcus Lee,2025-03-06T00:00:00.000+0000
+001Hs0000sUt1LLIAZ,Ironleaf Robotics,ironleafrobotics.com,Customer,SMB,Energy,UK,Marcus Lee,2024-09-30T00:00:00.000+0000
+001Hs0000WdnrJiIQI,Redwood Financial,https://www.redwoodfinancial.com/,Customer,SMB,Financial Services,USA,Sam Whitfield,2025-05-25T00:00:00.000+0000
+001Hs0000WlG6g3IQC,Keystone Logistics,keystonelogistics.com,Prospect,SMB ,Financial Services,USA,Marcus Lee,2024-09-26T00:00:00.000+0000
+001Hs0000JAfo16IQB,Umbra Energy,www.umbraenergy.com,Customer,MM,Logistics,UK,Sam Whitfield,2024-11-14T00:00:00.000+0000
+001Hs0000n68K4TIAU,Aurora Labs,https://auroralabs.com,Customer,Small Business,Manufacturing,Canada,Marcus Lee,2025-02-14T00:00:00.000+0000
+001Hs0000ozMdanIAC,NORTHSTAR FOODS,NORTHSTARFOODS.COM,Customer,,,,Marcus Lee,2025-06-14T00:00:00.000+0000
+001Hs00009VThX0IAL,Summit Studios,summitstudios.com,Customer,smb,Healthcare,US,Dana Ortiz,2024-06-20T00:00:00.000+0000
+001Hs0000rCeTspIAF,Yellowtail Studios,https://yellowtailstudios.com,Customer,Mid-Market,Financial Services,Australia,Dana Ortiz,2025-05-11T00:00:00.000+0000
+001Hs0000x41ZtpIAE,Redwood Media,redwoodmedia.com,Customer,enterprise,Software,US,Marcus Lee,2024-01-20T00:00:00.000+0000
+001Hs0000olZ9SHIA0,Willow Labs,https://willowlabs.com,Customer,Enterprise,Energy,Germany,Priya Shah,2024-04-19T00:00:00.000+0000
+001Hs00004OKmTSIA1,Granite Health,https://www.granitehealth.com/,Customer,smb,Retail,Canada,Sam Whitfield,2024-03-15T00:00:00.000+0000
+001Hs0000WqsuhaIQA,WILLOW LABS,WILLOWLABS.COM,Customer,,,,Sam Whitfield,2024-08-16T00:00:00.000+0000
+001Hs0000nIiU74IAF,Copper Labs,https://copperlabs.com,Customer,Enterprise ,Energy,US,Marcus Lee,2024-10-12T00:00:00.000+0000
+001Hs0000PcWb8pIQC,Redwood Labs,redwoodlabs.com,Customer,ENT,Media,Australia,Priya Shah,2024-03-11T00:00:00.000+0000
+001Hs0000EEpDJjIQN,Ember Financial,https://emberfinancial.com,Customer,enterprise,Retail,Australia,Marcus Lee,2024-10-06T00:00:00.000+0000
+001Hs0000W4yrW8IQI,Orchid Health,www.orchidhealth.com,Customer,smb,Retail,US,Dana Ortiz,2025-04-10T00:00:00.000+0000
+001Hs0000Xsf2o3IQA,Tidewater Foods,https://tidewaterfoods.com,Customer,Mid-Market,Logistics,United Kingdom,Sam Whitfield,2024-02-16T00:00:00.000+0000
+001Hs0000JcDfuqIQC,Beacon Health,https://beaconhealth.com,Customer,Small Business,Manufacturing,US,Priya Shah,2025-02-14T00:00:00.000+0000
+001Hs0000PgdzUvIQI,Driftwood Robotics,www.driftwoodrobotics.com,Customer,SMB,Logistics,Japan,Marcus Lee,2024-02-25T00:00:00.000+0000
+001Hs0000yC6Ct3IAF,Harbor Logistics,https://www.harborlogistics.com/,Customer,Mid-Market,Retail,Australia,Dana Ortiz,2024-08-19T00:00:00.000+0000
+001Hs0000blV7vYIAS,Xenon Health,www.xenonhealth.com,Prospect,ENT,Retail,Canada,Marcus Lee,2024-06-30T00:00:00.000+0000
+001Hs0000VErULWIQ3,Xenon Studios,xenonstudios.com,Customer,SMB,Financial Services,UK,Priya Shah,2024-07-08T00:00:00.000+0000
+001Hs00008JkqH3IAJ,Pinecrest Logistics,https://www.pinecrestlogistics.com/,Customer,ENT,Retail,USA,Marcus Lee,2024-05-11T00:00:00.000+0000
+001Hs0000pSEPTFIA5,Quill Studios,https://quillstudios.com,Customer,smb,Energy,Germany,Priya Shah,2025-05-15T00:00:00.000+0000
+001Hs0000kplJekIAE,Xenon Logistics,https://xenonlogistics.com,Customer,ENT,Software,United States,Sam Whitfield,2024-09-27T00:00:00.000+0000
+001Hs00001OpgSXIAZ,Summit Robotics,summitrobotics.com,Customer,SMB,Financial Services,UK,Priya Shah,2024-03-18T00:00:00.000+0000
+001Hs0000yyMDHqIAO,Bluefin Logistics,https://bluefinlogistics.com,Customer,smb,Software,Australia,Priya Shah,2025-03-08T00:00:00.000+0000
+001Hs00007W7eaDIAR,Granite Foods,www.granitefoods.com,Customer,smb,Logistics,Japan,Priya Shah,2024-11-03T00:00:00.000+0000
+001Hs0000KmqcTBIQY,Zephyr Foods,zephyrfoods.com,Customer,Small Business,Software,United Kingdom,Marcus Lee,2024-04-28T00:00:00.000+0000
+001Hs0000BO0FfEIQV,Fable Financial,https://www.fablefinancial.com/,Prospect,Mid-Market,Manufacturing,US,Sam Whitfield,2024-07-04T00:00:00.000+0000
+001Hs0000lFnwZqIAJ,Orchid Energy,https://www.orchidenergy.com/,Prospect,Mid-Market,Manufacturing,Canada,Dana Ortiz,2025-05-21T00:00:00.000+0000
+001Hs0000zFeKORIA3,Orchid Foods,https://orchidfoods.com,Customer,SMB ,Software,US,Marcus Lee,2024-04-26T00:00:00.000+0000
+001Hs00006iNIb6IAG,Acme Robotics,www.acmerobotics.com,Customer,smb,Retail,US,Priya Shah,2024-06-18T00:00:00.000+0000
+001Hs0000nRO2qGIAT,Copper Logistics,www.copperlogistics.com,Customer,Mid-Market,Energy,US,Dana Ortiz,2024-08-03T00:00:00.000+0000
+001Hs00000K6sChIAJ,Delta Analytics,deltaanalytics.com,Customer,Mid Market,Energy,USA,Dana Ortiz,2024-11-10T00:00:00.000+0000
+001Hs0000sGQONvIAP,Quill Financial,www.quillfinancial.com,Customer,MM,Logistics,France,Marcus Lee,2024-06-22T00:00:00.000+0000
+001Hs0000CLrZ3aIQF,Quill Energy,https://www.quillenergy.com/,Customer,smb,Healthcare,Singapore,Sam Whitfield,2025-07-12T00:00:00.000+0000
+001Hs0000QAuzSsIQJ,Vantage Foods,https://vantagefoods.com,Customer,MM,Healthcare,United States,Marcus Lee,2024-11-03T00:00:00.000+0000
+001Hs0000ZcUDIhIQO,Yellowtail Foods,https://www.yellowtailfoods.com/,Customer,SMB ,Retail,USA,Priya Shah,2024-12-18T00:00:00.000+0000
+001Hs0000JsS8iOIQS,Fable Analytics,https://www.fableanalytics.com/,Prospect,Small Business,Energy,Canada,Priya Shah,2024-02-16T00:00:00.000+0000
+001Hs0000bh4qlLIAQ,Yellowtail Analytics,https://yellowtailanalytics.com,Customer,SMB ,Financial Services,Japan,Priya Shah,2025-07-03T00:00:00.000+0000
+001Hs0000kIUpkDIAT,Lumen Health,lumenhealth.com,Customer,smb,Retail,Canada,Dana Ortiz,2024-03-14T00:00:00.000+0000
+001Hs0000Y3c5wnIQA,Summit Media,https://www.summitmedia.com/,Prospect,Small Business,Media,US,Priya Shah,2025-01-08T00:00:00.000+0000
+001Hs0000o7qYYOIA2,Harbor Analytics,https://harboranalytics.com,Customer,MM,Media,France,Sam Whitfield,2025-04-09T00:00:00.000+0000
+001Hs00000ULru2IAD,Umbra Analytics,https://umbraanalytics.com,Customer,MM,Media,United Kingdom,Priya Shah,2025-05-10T00:00:00.000+0000
+001Hs0000Mqbfo9IQA,Quill Media,https://quillmedia.com,Customer,Small Business,Software,United States,Dana Ortiz,2025-03-18T00:00:00.000+0000
+001Hs00002591AIIAY,Yellowtail Energy,www.yellowtailenergy.com,Customer,smb,Media,USA,Sam Whitfield,2024-11-01T00:00:00.000+0000
+001Hs00008W5CN0IAN,Driftwood Financial,www.driftwoodfinancial.com,Customer,Small Business,Retail,Japan,Sam Whitfield,2025-07-26T00:00:00.000+0000
+001Hs00002JgdPIIAZ,Ember Robotics,https://www.emberrobotics.com/,Customer,Small Business,Software,Canada,Priya Shah,2025-03-29T00:00:00.000+0000
+001Hs0000BVJvwSIQT,Willow Studios,https://willowstudios.com,Customer,SMB ,Energy,US,Dana Ortiz,2025-07-20T00:00:00.000+0000
+001Hs0000vIDAdnIAH,Harbor Robotics,https://www.harborrobotics.com/,Customer,Mid-Market,Retail,United Kingdom,Sam Whitfield,2024-03-06T00:00:00.000+0000
+001Hs0000Y3oobQIQQ,Beacon Labs,beaconlabs.com,Customer,enterprise,Media,United States,Sam Whitfield,2024-12-24T00:00:00.000+0000
+001Hs0000ddLEG6IAO,Juniper Studios,https://juniperstudios.com,Customer,enterprise,Healthcare,Singapore,Priya Shah,2024-03-03T00:00:00.000+0000

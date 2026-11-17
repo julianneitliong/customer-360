@@ -1,0 +1,32 @@
+name: loopwise
+version: "1.0.0"
+config-version: 2
+
+profile: loopwise
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+# Each layer lands in its own Athena database:
+#   loopwise_staging      -> cleaned copy of each raw table (views)
+#   loopwise_intermediate -> matching and deduplication (views)
+#   loopwise_marts        -> final tables the AI reads (tables)
+models:
+  loopwise:
+    staging:
+      +schema: staging
+      +materialized: view
+    intermediate:
+      +schema: intermediate
+      +materialized: view
+    marts:
+      +schema: marts
+      +materialized: table
+
+seeds:
+  loopwise:
+    +schema: seeds

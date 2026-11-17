@@ -1,0 +1,127 @@
+Id,AccountId,Name,StageName,Amount,CloseDate,CurrencyIsoCode
+006Hs0000iOtpqQIAR,001Hs0000RV5IfL,Umbra Logistics - Expansion,Closed Won,10000,02/11/2025,USD
+006Hs0000ELzIG7IQN,001Hs0000RV5IfLIQV,Umbra Logistics - Renewal,Negotiation,5500,04/03/2025,USD
+006Hs0000MO6fgXIQR,001Hs0000CLrZ3a,Quill Energy - Renewal,Closed Won,83500,2026-04-22,USD
+006Hs0000PRPz9WIQT,001Hs0000CLrZ3a,Quill Energy - Expansion,Negotiation,"13,500",05/06/2026,USD
+006Hs0000VHJLSKIQ5,001Hs0000ZcUDIh,Yellowtail Foods - Expansion,Closed Won,99500,2025-09-15,USD
+006Hs0000bEgsA6IAJ,001Hs0000ZcUDIhIQO,Yellowtail Foods - New Business,Closed Won,94000,2025-06-22,USD
+006Hs0000vDYnHEIA1,001Hs0000Xsf2o3,Tidewater Foods - New Business,Closed Won,90000,08/03/2024,EUR
+006Hs0000etcZThIAM,001Hs0000Xsf2o3,Tidewater Foods - Expansion,Closed Lost,87500,2024-08-07,EUR
+006Hs0000HlJkvJIQS,001Hs0000kIUpkDIAT,Lumen Health - Expansion,Closed Won,"52,500",2024-07-26,USD
+006Hs0000OQBzbVIQT,001Hs0000kIUpkDIAT,Lumen Health - New Business,Negotiation,55500,06/27/2024,USD
+006Hs0000nnrWTZIA2,001Hs0000n68K4TIAU,Aurora Labs - Renewal,Closed Won,"69,500",2026-02-19,USD
+006Hs0000umDhqQIAS,001Hs0000n68K4TIAU,Aurora Labs - Renewal,Closed Won,41000,08/30/2025,USD
+006Hs0000Lhww2DIQQ,001Hs0000VLB5LzIQL,Delta Financial - Renewal,Closed Won,39000,2026-02-23,USD
+006Hs0000iuhpthIAA,001Hs0000VLB5Lz,Delta Financial - Renewal,Negotiation,"50,500",07/17/2026,USD
+006Hs0000KyBlFOIQ0,001Hs0000yyMDHqIAO,Bluefin Logistics - Renewal,Closed Won,23000,2025-05-27,USD
+006Hs0000silu1CIAQ,001Hs0000yyMDHqIAO,Bluefin Logistics - Expansion,Negotiation,63000,2025-11-23,USD
+006Hs00000y9JGPIA2,001Hs0000WlG6g3IQC,Keystone Logistics - Renewal,Closed Lost,91500,01/13/2025,USD
+006Hs0000kfKbYWIA0,001Hs0000WlG6g3,Keystone Logistics - New Business,Prospecting,"69,500",06/13/2025,USD
+006Hs0000XDKVXXIQ5,001Hs0000WlG6g3IQC,Keystone Logistics - Renewal,Negotiation,"15,500",12/31/2024,USD
+006Hs0000I0WcWUIQ0,001Hs0000x41ZtpIAE,Redwood Media - New Business,Closed Won,14000,2024-08-04,USD
+006Hs00003cCqw3IAC,001Hs0000x41ZtpIAE,Redwood Media - Expansion,Negotiation,16000,2024-06-30,USD
+006Hs0000LSw3TNIQZ,001Hs00008JkqH3IAJ,Pinecrest Logistics - New Business,Closed Won,27000,2025-06-02,USD
+006Hs0000KwIrMIIQ0,001Hs00008JkqH3,Pinecrest Logistics - Renewal,Closed Won,"74,000",06/20/2024,USD
+006Hs00000gi9WYIAY,001Hs0000vbLJoLIAW,Maple Foods - New Business,Closed Won,84500,2025-09-02,USD
+006Hs00003ipjTuIAI,001Hs0000vbLJoLIAW,Maple Foods - Renewal,Negotiation,19000,09/14/2025,USD
+006Hs0000yCeOY4IAN,001Hs0000nIiU74IAF,Copper Labs - Expansion,Closed Won,36500,05/22/2025,USD
+006Hs00008FuLa3IAF,001Hs0000nIiU74IAF,Copper Labs - Renewal,Negotiation,"59,500",06/11/2025,USD
+006Hs0000zn9B0nIAE,001Hs0000PgdzUvIQI,Driftwood Robotics - Expansion,Closed Won,44000,2024-12-04,USD
+006Hs00002FYv5RIAT,001Hs0000PgdzUvIQI,Driftwood Robotics - New Business,Closed Won,"59,500",2024-12-20,USD
+006Hs0000CDa9BmIQJ,001Hs00002JgdPIIAZ,Ember Robotics - New Business,Closed Won,39500,2025-06-27,USD
+006Hs0000fPxqfxIAB,001Hs00002JgdPIIAZ,Ember Robotics - Renewal,Closed Won,"51,500",08/26/2025,USD
+006Hs0000WoBPfTIQW,001Hs0000yq7YYD,Pinecrest Studios - New Business,Closed Won,17500,2025-06-20,GBP
+006Hs0000RCaaSvIQJ,001Hs0000yq7YYDIA2,Pinecrest Studios - Expansion,Negotiation,62000,2025-03-19,GBP
+006Hs0000fUZgguIAD,001Hs0000ddLEG6IAO,Juniper Studios - Expansion,Closed Won,"100,000",2024-09-25,USD
+006Hs0000RjeHKaIQM,001Hs0000ddLEG6IAO,Juniper Studios - New Business,Closed Won,93000,2025-02-04,USD
+006Hs0000j6ANRCIA4,001Hs00004KpLMcIAN,Cedar Energy - New Business,Closed Won,18500,2026-03-17,EUR
+006Hs0000Uyw9BuIQI,001Hs00004KpLMcIAN,Cedar Energy - New Business,Negotiation,"11,500",2025-12-25,EUR
+006Hs0000MUMsX8IQL,001Hs00007W7eaDIAR,Granite Foods - Renewal,Closed Won,27000,2025-09-16,USD
+006Hs0000zsPdY5IAK,001Hs00007W7eaDIAR,Granite Foods - New Business,Negotiation,15000,2025-11-30,USD
+006Hs0000MeH4axIQC,001Hs0000C1ITtNIQW,Ember Foods - New Business,Closed Won,73500,12/15/2025,EUR
+006Hs0000IRlWE9IQN,001Hs0000C1ITtNIQW,Ember Foods - New Business,Closed Lost,"9,500",2025-07-29,EUR
+006Hs0000c7d8YzIAI,001Hs0000nRO2qGIAT,Copper Logistics - Renewal,Closed Won,99000,12/01/2024,USD
+006Hs0000SzfOIIIQ2,001Hs0000nRO2qGIAT,Copper Logistics - Expansion,Closed Lost,"11,000",2025-03-17,USD
+006Hs0000uzLOW1IAO,001Hs0000CJTBJaIQP,Northstar Analytics - Renewal,Closed Won,"90,000",07/06/2025,USD
+006Hs000092pdpfIAA,001Hs0000CJTBJaIQP,Northstar Analytics - New Business,Closed Won,78500,2025-10-13,USD
+006Hs0000QVQVlhIQH,001Hs0000Y3c5wn,Summit Media - New Business,Closed Lost,21500,06/25/2025,USD
+006Hs0000HHY0UqIQL,001Hs0000Y3c5wn,Summit Media - New Business,Prospecting,35000,2025-07-14,USD
+006Hs0000vZBrHeIAL,001Hs0000Y3c5wn,Summit Media - Renewal,Negotiation,64500,02/02/2025,USD
+006Hs0000xdF2KkIAK,001Hs0000blV7vYIAS,Xenon Health - Expansion,Closed Lost,74000,2025-03-28,USD
+006Hs0000VGac23IQB,001Hs0000blV7vY,Xenon Health - New Business,Prospecting,50000,2024-11-03,USD
+006Hs0000792cJZIAY,001Hs0000blV7vYIAS,Xenon Health - Renewal,Negotiation,29500,10/09/2024,USD
+006Hs00006Uur0eIAB,001Hs0000Y3oobQIQQ,Beacon Labs - New Business,Closed Won,7500,2025-08-04,USD
+006Hs0000ZHc9zeIQB,001Hs0000Y3oobQIQQ,Beacon Labs - Expansion,Closed Won,40500,04/27/2025,USD
+006Hs0000DaxmsKIQQ,001Hs0000bh4qlLIAQ,Yellowtail Analytics - Renewal,Closed Won,60000,04/22/2026,USD
+006Hs0000FXXmU5IQL,001Hs0000bh4qlLIAQ,Yellowtail Analytics - New Business,Closed Won,"53,000",2026-05-11,USD
+006Hs0000wO1S4aIAF,001Hs0000KmqcTBIQY,Zephyr Foods - New Business,Closed Won,49000,02/09/2025,GBP
+006Hs0000nHpAF9IAN,001Hs0000KmqcTB,Zephyr Foods - New Business,Closed Won,12500,2024-06-30,GBP
+006Hs0000AS5xDVIQZ,001Hs0000QAuzSs,Vantage Foods - New Business,Closed Won,82500,08/06/2025,USD
+006Hs0000LKdBQ9IQN,001Hs0000QAuzSs,Vantage Foods - Expansion,Closed Won,"41,000",12/21/2024,USD
+006Hs0000uuCroeIAC,001Hs0000nBYLMPIA5,Copper Health - New Business,Closed Won,75500,2025-01-21,USD
+006Hs0000gkCDuAIAW,001Hs0000nBYLMP,Copper Health - Expansion,Negotiation,27500,03/30/2024,USD
+006Hs0000q2hfkZIAQ,001Hs0000sGQONvIAP,Quill Financial - Renewal,Closed Won,6000,2025-02-24,GBP
+006Hs0000jfTp9wIAC,001Hs0000sGQONvIAP,Quill Financial - New Business,Closed Lost,34000,2024-12-16,GBP
+006Hs00002CJVJpIAP,001Hs00004OKmTS,Granite Health - New Business,Closed Won,18500,2024-10-18,USD
+006Hs0000d1XoimIAC,001Hs00004OKmTSIA1,Granite Health - Expansion,Closed Won,83500,2024-03-31,USD
+006Hs0000q60ebeIAA,001Hs0000olZ9SH,Willow Labs - Renewal,Closed Won,17000,2025-02-23,EUR
+006Hs0000hc8DdkIAE,001Hs0000olZ9SHIA0,Willow Labs - Expansion,Negotiation,51500,10/15/2024,EUR
+006Hs0000RBlwn6IQB,001Hs00008W5CN0,Driftwood Financial - Expansion,Closed Won,20000,2026-02-16,USD
+006Hs0000NNpPsFIQV,001Hs00008W5CN0IAN,Driftwood Financial - Renewal,Closed Won,12000,06/15/2026,USD
+006Hs0000AmP4ZHIQ0,001Hs0000rCeTsp,Yellowtail Studios - Renewal,Closed Won,49500,07/30/2025,USD
+006Hs0000IYFw6KIQT,001Hs0000rCeTspIAF,Yellowtail Studios - Expansion,Closed Lost,"4,000",01/21/2026,USD
+006Hs0000b5ZXrdIAG,001Hs0000vIDAdnIAH,Harbor Robotics - Expansion,Closed Won,99000,2024-07-06,EUR
+006Hs0000gpQprIIAS,001Hs0000vIDAdnIAH,Harbor Robotics - Renewal,Negotiation,"29,000",06/05/2024,EUR
+006Hs0000lpLuZVIA0,001Hs00002591AIIAY,Yellowtail Energy - Renewal,Closed Won,"90,500",02/07/2025,USD
+006Hs0000KjK8m1IQC,001Hs00002591AIIAY,Yellowtail Energy - Expansion,Closed Lost,23000,08/28/2025,USD
+006Hs0000doMobHIAS,001Hs00006iNIb6IAG,Acme Robotics - Expansion,Closed Won,26500,2024-08-13,USD
+006Hs0000Tl6Z23IQE,001Hs00006iNIb6,Acme Robotics - New Business,Closed Won,"91,000",2024-12-19,USD
+006Hs00003x9exTIAQ,001Hs0000W4yrW8IQI,Orchid Health - Expansion,Closed Won,44000,01/14/2026,USD
+006Hs0000ikU8BYIA0,001Hs0000W4yrW8IQI,Orchid Health - Expansion,Closed Won,23000,10/02/2025,USD
+006Hs0000L0lytUIQQ,001Hs0000PcWb8pIQC,Redwood Labs - New Business,Closed Won,"1,000",02/24/2025,USD
+006Hs0000clMu6ZIAS,001Hs0000PcWb8pIQC,Redwood Labs - New Business,Closed Won,14000,01/05/2025,USD
+006Hs0000VepwukIQA,001Hs00009VThX0IAL,Summit Studios - New Business,Closed Won,86500,12/16/2024,USD
+006Hs0000aqnpSeIAI,001Hs00009VThX0IAL,Summit Studios - New Business,Closed Won,7000,02/13/2025,USD
+006Hs0000Ak4AF4IQM,001Hs00001OpgSXIAZ,Summit Robotics - Renewal,Closed Won,62000,2025-04-07,EUR
+006Hs0000CeZ2csIQC,001Hs00001OpgSX,Summit Robotics - Expansion,Closed Lost,10000,06/19/2024,EUR
+006Hs0000kUeJ85IAF,001Hs0000gB9xO5IAJ,Northstar Foods - Expansion,Closed Won,79500,09/24/2025,USD
+006Hs0000bB8PkMIAV,001Hs0000gB9xO5IAJ,Northstar Foods - New Business,Closed Won,"43,000",2026-03-11,USD
+006Hs0000SJU7UIIQ1,001Hs00000ULru2,Umbra Analytics - Expansion,Closed Won,"13,000",2025-12-15,GBP
+006Hs0000KJ1FjdIQF,001Hs00000ULru2IAD,Umbra Analytics - Expansion,Closed Won,"85,500",12/07/2025,GBP
+006Hs0000gbnkOsIAI,001Hs0000lFnwZqIAJ,Orchid Energy - Expansion,Closed Lost,40000,09/10/2025,USD
+006Hs0000F5QqfPIQS,001Hs0000lFnwZqIAJ,Orchid Energy - New Business,Prospecting,49500,01/27/2026,USD
+006Hs0000CcqCDqIQM,001Hs0000lFnwZq,Orchid Energy - Expansion,Negotiation,20000,2025-09-03,USD
+006Hs0000wZIAWLIA5,001Hs0000pSEPTF,Quill Studios - New Business,Closed Won,67500,05/02/2026,EUR
+006Hs0000R37EK4IQM,001Hs0000pSEPTF,Quill Studios - Expansion,Closed Won,"92,000",2026-02-23,EUR
+006Hs00005HZKRNIA5,001Hs0000BVJvwS,Willow Studios - Expansion,Closed Won,"22,000",2026-05-18,USD
+006Hs0000icBfRBIA0,001Hs0000BVJvwS,Willow Studios - Renewal,Negotiation,"77,000",11/05/2025,USD
+006Hs00006ZefyJIAR,001Hs0000VErULWIQ3,Xenon Studios - Expansion,Closed Won,67500,07/25/2025,EUR
+006Hs0000YSNLHYIQ5,001Hs0000VErULWIQ3,Xenon Studios - Expansion,Closed Lost,"73,500",2024-07-24,EUR
+006Hs0000KXgYs3IQF,001Hs0000JsS8iOIQS,Fable Analytics - Expansion,Closed Lost,34500,04/20/2024,USD
+006Hs0000FKMEclIQH,001Hs0000JsS8iO,Fable Analytics - New Business,Prospecting,88000,01/26/2025,USD
+006Hs0000z44vSpIAI,001Hs0000JsS8iO,Fable Analytics - Expansion,Negotiation,48500,2024-03-16,USD
+006Hs0000tr1F2SIAU,001Hs0000zFeKORIA3,Orchid Foods - New Business,Closed Won,"96,000",10/08/2024,USD
+006Hs0000rUAMPfIAP,001Hs0000zFeKOR,Orchid Foods - New Business,Closed Lost,53000,10/17/2024,USD
+006Hs00000dGYkeIAG,001Hs0000yC6Ct3,Harbor Logistics - Renewal,Closed Won,68000,2025-03-08,USD
+006Hs0000m41m1dIAA,001Hs0000yC6Ct3,Harbor Logistics - Expansion,Negotiation,"47,000",2024-11-25,USD
+006Hs00000DGzO7IAL,001Hs0000kplJek,Xenon Logistics - New Business,Closed Won,"63,500",04/13/2025,USD
+006Hs000093ELJwIAO,001Hs0000kplJek,Xenon Logistics - Expansion,Closed Lost,89000,2025-01-05,USD
+006Hs0000ydk2KXIAY,001Hs0000o7qYYOIA2,Harbor Analytics - New Business,Closed Won,87500,2025-05-03,EUR
+006Hs0000PAGb3XIQT,001Hs0000o7qYYOIA2,Harbor Analytics - Renewal,Closed Lost,"17,500",2025-09-03,EUR
+006Hs0000oqMZ8tIAG,001Hs00000K6sChIAJ,Delta Analytics - Renewal,Closed Won,55000,11/24/2024,USD
+006Hs0000DqnDtRIQU,001Hs00000K6sChIAJ,Delta Analytics - Renewal,Negotiation,14000,2025-05-17,USD
+006Hs0000911xJPIAY,001Hs0000Mqbfo9IQA,Quill Media - Expansion,Closed Won,"14,500",03/02/2026,USD
+006Hs0000vrOu3rIAC,001Hs0000Mqbfo9,Quill Media - Renewal,Negotiation,84000,04/29/2025,USD
+006Hs0000jHWp5dIAD,001Hs0000BO0FfEIQV,Fable Financial - Renewal,Closed Lost,41500,2024-10-18,USD
+006Hs0000bPFsq6IAD,001Hs0000BO0FfEIQV,Fable Financial - Expansion,Prospecting,75500,2025-07-18,USD
+006Hs0000UToRIOIQ3,001Hs0000BO0FfEIQV,Fable Financial - Renewal,Negotiation,39000,2025-01-05,USD
+006Hs0000lsgEiVIAU,001Hs0000JcDfuq,Beacon Health - Renewal,Closed Won,24000,12/06/2025,USD
+006Hs0000fowoV3IAI,001Hs0000JcDfuq,Beacon Health - Expansion,Negotiation,75500,01/25/2026,USD
+006Hs0000Ed3OLLIQ2,001Hs0000WdnrJiIQI,Redwood Financial - New Business,Closed Won,25500,2025-08-03,USD
+006Hs0000yHtAd3IAF,001Hs0000WdnrJiIQI,Redwood Financial - New Business,Closed Lost,44500,05/18/2026,USD
+006Hs0000ju3TlXIAU,001Hs0000JAfo16,Umbra Energy - Expansion,Closed Won,23500,07/16/2025,EUR
+006Hs0000daCrnWIAS,001Hs0000JAfo16IQB,Umbra Energy - Renewal,Negotiation,63500,2025-10-14,EUR
+006Hs0000BOBzB9IQL,001Hs0000EEpDJjIQN,Ember Financial - New Business,Closed Won,"26,500",08/26/2025,USD
+006Hs00005uW1HmIAK,001Hs0000EEpDJj,Ember Financial - New Business,Closed Won,32500,2024-10-23,USD
+006Hs0000tigyGLIAY,001Hs0000sUt1LL,Ironleaf Robotics - New Business,Closed Won,39000,04/04/2025,EUR
+006Hs0000UHMHvBIQX,001Hs0000sUt1LLIAZ,Ironleaf Robotics - New Business,Negotiation,63500,05/31/2025,EUR

@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+.venv/
+.venv-dbt/
+venv/
+
+# dbt
+target/
+dbt_packages/
+logs/
+
+# Secrets
+.env
+profiles.yml
+
+# OS
+.DS_Store
+
+# Never commit credentials
+*credentials*
+*.csv.keys
+*accessKeys*
+
+# Installers and downloads
+*.pkg
